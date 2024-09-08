@@ -1,6 +1,48 @@
-<div style="display: flex; flex-direction: column; align-items: center;">
-    <iframe src="https://docs.google.com/presentation/d/1NVFs4v0_VJvOIVXylYNCmTCdVsvJY1_Ko_O6Fg4iX5E/embed?start=false&loop=false&delayms=3000&rm=minimal" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        .feedback-button {
+            width: 80%;
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 769px) {
+        iframe {
+            width: 1280px;
+            height: 749px;
+        }
+
+        .feedback-button {
+            width: auto;
+            font-size: 16px;
+        }
+    }
+</style>
+
+<div class="container">
+    <iframe src="https://docs.google.com/presentation/d/1NVFs4v0_VJvOIVXylYNCmTCdVsvJY1_Ko_O6Fg4iX5E/embed?start=false&loop=false&delayms=3000&rm=minimal" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     <a href="https://matt1862000.github.io/decisions/survey.html">
-        <button style="margin-top: 10px; padding: 10px 20px; font-size: 16px; background-color: green; color: white; border: none; cursor: pointer;">Leave Feedback</button>
+        <button class="feedback-button">Leave Feedback</button>
     </a>
 </div>
